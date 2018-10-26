@@ -25,7 +25,7 @@ CREATE TABLE keys(
 CREATE TABLE users(
   user_id SERIAL primary key NOT NULL,
   mailaddress character varying(30) NOT NULL,
-  password character varying(30) NOT NULL,
+  password character varying(100) NOT NULL,
   created_at timestamp with time zone default CURRENT_TIMESTAMP NOT NULL,
   updated_at timestamp with time zone default CURRENT_TIMESTAMP
 );
